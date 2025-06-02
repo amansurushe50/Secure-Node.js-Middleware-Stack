@@ -1,0 +1,24 @@
+# baseURL
+@baseURL = http://localhost:60005
+
+@CSRFToken = tolHxuo8-IPXZiUEIl92il3CIA9gAEvwqR0c
+
+
+
+
+###
+# Generate CSRF Token
+GET {{ baseURL }}/api/csrf-token
+
+###
+# USE CSRF Token
+# Submit with CSRF Token
+POST {{ baseURL }}/api/submit
+X-CSRF-Token: {{CSRFToken}}
+Content-Type: application/json
+
+{
+   "message": "Hello World"
+}
+
+

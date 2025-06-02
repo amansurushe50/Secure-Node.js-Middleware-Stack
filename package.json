@@ -1,0 +1,56 @@
+{
+  "name": "security-middleware-app",
+  "version": "1.0.0",
+  "description": "Node.js Express application demonstrating custom security middleware implementation",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest",
+    "test:rate-limit": "node rate-limit_test.js",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "security",
+    "middleware",
+    "rate-limiting",
+    "csrf",
+    "sanitization",
+    "ip-blacklist"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "csurf": "^1.11.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "xss-clean": "^0.1.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.55.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/security-middleware-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/security-middleware-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/security-middleware-app#readme"
+}

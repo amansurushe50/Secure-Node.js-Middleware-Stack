@@ -1,0 +1,24 @@
+# baseURL
+@baseURL = http://localhost:60005
+
+@Auth = Bearer admin-secret-key-2024
+
+
+
+
+###
+# View blacklist (requires API key)
+GET {{ baseURL }}/api/admin/blacklist
+Authorization: {{Auth}}
+
+###
+#Add IP to blacklist
+POST {{ baseURL }}/api/admin/blacklist
+Authorization: {{Auth}}
+Content-Type: application/json
+
+{
+  "ip": "192.168.1.200"
+}
+
+

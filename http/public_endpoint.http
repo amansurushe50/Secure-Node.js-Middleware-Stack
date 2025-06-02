@@ -1,0 +1,10 @@
+# baseURL
+@baseURL = http://localhost:60005
+
+
+
+
+###
+# Public Endpoint
+GET {{ baseURL }}/api/public
+
