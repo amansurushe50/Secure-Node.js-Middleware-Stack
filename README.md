@@ -26,33 +26,14 @@ Secure Node.js Middleware Stack/
 
 ### 1. Initialize Project
 ```bash
-mkdir security-middleware-app
-cd security-middleware-app
-npm init -y
+- git clone <repo_url>
+- npm install
+- set up the .env file mention below
+- npm run dev 
 ```
 
-### 2. Install Dependencies
-```bash
-# Core dependencies
-npm install express helmet express-rate-limit csurf express-mongo-sanitize xss-clean cookie-parser cors
 
-# Development dependencies
-npm install --save-dev nodemon jest supertest
-```
-
-### 3. Update package.json scripts
-```json
-{
-  "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "test": "jest",
-    "test:watch": "jest --watch"
-  }
-}
-```
-
-### 4. Create .env.example
+### 4. Create .env
 ```
 PORT=3000
 NODE_ENV=development
